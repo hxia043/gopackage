@@ -33,4 +33,6 @@ func main() {
 	viper.BindPFlags(demo)
 
 	fmt.Println(viper.GetString("info"))
+	ds, _ := demo.GetString("info")
+	fmt.Println(ds)
 }
